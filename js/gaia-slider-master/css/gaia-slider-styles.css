@@ -1,0 +1,99 @@
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*container wrapper styles*/
+#gaia-slide-wrapper {
+	max-width: 686px;;
+	margin:0 auto;
+	position: relative;
+	min-height: 409px;
+}
+
+/*prev and next styling*/
+#gaia-prev,
+#gaia-next {
+	position: absolute;
+	padding: 1rem;
+	z-index: 999;
+	top: 180px;
+	left: 0;
+	font: 100 80px Arial, san-serif;
+	color: red;
+	display: none;
+}
+
+#gaia-next {
+	left: auto;
+	right: 0;
+}
+
+#gaia-thumb-prev,
+#gaia-thumb-next {
+	position: relative;
+	float: left;
+	padding: 2px;
+	z-index: 999;
+	top: 5px;
+	height: 52px;
+	width: 26px;
+	background: url('../img/thumb-but-l.png');
+}
+
+#gaia-thumb-next {
+	left: auto;
+	right: 0;
+	background: url('../img/thumb-but-r.png');
+}
+
+#gaia-thumbnails {
+	margin: 0;
+	padding: 0;
+	position: relative; 
+	left: 0; 
+	top: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/*slide styles*/
+.gaia-slide {
+	position: absolute;
+	width: 100%;
+}
+.gaia-slide img {
+	width: 100%;
+	height: auto;
+}
+.gaia-slide.hidden {
+	display: none;
+}
+
+/*indicators styleing*/
+#gaia-indicators {
+	width: 634px;
+	height: 70px;
+	overflow: hidden;
+	text-align: center;
+	margin: 5px 0 0;
+	position: relative;
+	float: left;
+}
+
+#gaia-indicators .gaia-thumb {
+	max-width: 87px;
+	height: auto;
+	display: inline-block;
+	padding: 0 0 3px 0;
+	margin: 0 3px;
+}
+#gaia-indicators .gaia-thumb.active-thumb {
+	border-bottom: 3px solid #ccc;
+}
+#gaia-indicators img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
